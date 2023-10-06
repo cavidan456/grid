@@ -1,0 +1,47 @@
+body{
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: aliceblue;
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.item-1 { grid-area:masonryI ; }
+.item-2 { grid-area:responsive ; }
+.item-3 { grid-area: overlap; }
+.item-4 { grid-area: fluid; }
+.item-5 { grid-area: explicitly; }
+.item-6 { grid-area: negative; }
+.item-7 { grid-area: flexible; }
+.item-8 { grid-area: masonryII; }
+.item-9 { grid-area: masonryIII; }
+.item-10 { grid-area: dom; }
+.item-11 { grid-area: named; }
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'masonryI responsive overlap overlap'
+    'masonryI fluid explicitly negative'
+    'flexible masonryII explicitly masonryIII'
+    'dom masonryII named named';
+    gap: 20px;
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.grid-container div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    color: blue;
+    background-color: aliceblue;
+    padding: 50px 0;
+    font-size: 25px;
+}
